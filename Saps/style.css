@@ -1,0 +1,32 @@
+.header{
+    width: 100%;
+    background-color: #D8E2DC;
+    padding: 0px;
+
+
+    .h1{
+        text-align: center;
+        color: #9D8189;
+    }
+    .h4{
+        text-align: center;
+        color: #9D8189;
+    }
+    
+}
+
+.div{
+    background-color: #FFE5D9;
+    text-align: center;
+    padding: 2px;
+    
+
+    .a{
+        color: coral;
+        text-align: center;
+    }
+}
+
+.desc{
+    text-align: center;
+}
