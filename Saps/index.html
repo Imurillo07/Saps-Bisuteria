@@ -2,42 +2,133 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Saps Bisuteria</title>
+    <title>Sap's Bisuteria</title>
     <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <header class="header">
-        <h1 class="h1">
-            <a>Saps Bisuteria</a>
-        </h1>
-        <h4 class="h4">
-            <a>Tienda Virtual Costa Rica<br>
-                Accesorios Personalizados</a>
-        </h4>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img  src="Imagenes/Transparente.png" alt="Logo de SAPS">
+            <h2 class="nombre-empresa">Sap's Bisuteria</h2>
+        </div>
 
-        <hr color="coral" size="2" >
+        <nav>
+            <a href="#catalogo1" class="nav-link">Catálogo</a>
+            <a href="index.html" class="nav-link"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAASpJREFUSEvNlf9RAjEQhb+rAKhAOwAqQCvREugA6YASoBIsQTvQCtQKYB6TOEvIj725uRny32Wz79u9vL3rGHl1I+vTBzAFjqGgZ+DXU5wXEMUXQfQDcEE8ACv+GQBzwAVpAVLxpwB4B1yQGiAnHt+7Yi5ICVATj3frguQAHnE3JAX0EXdBLCC14szrdUC5PzkLW4BsJ2fEFWPyvgZMIrsQXAe4ZkF5WieTq72lnj0AuWVVmFrFBEkBmpfLUOYuOVaimKr+AiYFwF84YwFXmi2AEt+ATQGwDfFBACXvgZcEcgBezZ7t/OYibW72YAJJxQd3EAtQJ1q28hgb3EHhGv637wegL2bJlq0uvoFHeyhnU33z9a4fWmpJXOK6Gw1f1UU9devHW3+0wbAzF9hTGcQ1z8gAAAAASUVORK5CYII="/></a>
+        </nav>
     </header>
 
-    <div class="div">
-        <a href="index.html" class="a"><strong>Home</strong></a>
-        <a href="galeria.html" class="a">Galeria</a>
-        <a href="comprar.html" class="a">Comprar</a>
-        <a href="info.html" class="a">Sobre nosotros</a>
+    <!-- Catalogo/ -->
+    <div class="catalogo">
+        <h1>Catálogo</h1>
+        <hr size="8" color="purple"><br>
+        <div class="contenedor-catalogo">
+            <div class="imagen">
+                <img src="Imagenes/aretes.jpg" alt="">
+                <div class="overlay">
+                    <h2><a href="aretes.html">Aretes</a></h2>
+                </div>
+            </div>
+            <div class="imagen">
+                <img src="Imagenes/collares.jpg" alt="">
+                <div class="overlay">
+                    <h2><a href="collares.html">Collares</a></h2>
+                </div>
+            </div>
+            <div class="imagen">
+                <img src="Imagenes/bolsos.jpg" alt="">
+                <div class="overlay">
+                    <h2><a href="bolsos.html">Bolsos</a></h2>
+                </div>
+            </div>
+            <div class="imagen">
+                <img src="Imagenes/pulseras.jpg" alt="">
+                <div class="overlay">
+                    <h2><a href="pulseras.html">Pulseras</a></h2>
+                </div>
+            </div>
+            <div class="imagen">
+                <img src="Imagenes/llaveros.jpg" alt="">
+                <div class="overlay">
+                    <h2><a href="llaveros.html">Llaveros</a></h2>
+                </div>
+            </div>
+            <div class="imagen">
+                <img src="Imagenes/anillos.jpg" alt="">
+                <div class="overlay">
+                    <h2><a href="anillos.html">Anillos</a></h2>
+                </div>
+            </div>
+            <div class="imagen">
+                <img src="Imagenes/bodas.jpg" alt="">
+                <div class="overlay">
+                    <h2><a href="bodas.html">Bodas</a></h2>
+                </div>
+            </div>
+        </div>
+    
     </div>
 
-    <div class="desc">
-        <table>
-            <tr>
-                <p>Mini descripcion de Saps <br></p>
-            </tr>
-            <tr></tr>
-            <tr>
-                <p>Como ponerse en contacto con Saps</p>
-            </tr>
-        </table>
-    </div>
 
 
-<script src="script.js"></script>
+    <!-- footer -->
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="Imagenes/Transparente.png" alt="Logo de Saps Bisuteria">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>Sobre Nosostros</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, vel.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, vel.</p>
+            </div>
+            <div class="box">
+                <h2>Contactano</h2>
+                <div class="red-social">
+                    <a href="#">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
+                    <a href="#"></a>
+                        <i class='bx bxl-instagram'></i>
+                    <a href="#">
+                        <i class='bx bxl-whatsapp'></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2023 <strong>Sap's Bisuteria</strong> - Todos los derechos reservados</small>
+        </div>
+    </footer>
+
+<!--  footer 
+    <footer id="contacto">
+        <div class="contenedor footer-content">
+            <div class="contact-us">
+                <h2 class="brand">Saps Bisuteria</h2>
+                <p> Tienda Virtual Costa Rica<br>
+                    Accesorios Personalizados</p>
+            </div>
+            <div class="social-media">
+                <a href="./" class="social-media-icon">
+                    <i class='bx bxl-facebook'></i>
+                </a>
+                <a href="./" class="social-media-icon">
+                    <i class='bx bxl-twitter'></i>
+                </a>
+                <a href="./" class="social-media-icon">
+                    <i class='bx bxl-instagram'></i>
+                </a>
+            </div>
+        </div>
+        <div class="line"></div>
+    </footer>
+-->
 </body>
 </html>
