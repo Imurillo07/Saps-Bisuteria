@@ -13,6 +13,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    font-family: saps;
 }
 
 h2{
@@ -42,6 +43,7 @@ nav{
     font-weight: bold;
     font-size: medium;
     padding: 10px;
+    font-size: 20px;
 }
 
 nav a:hover{
@@ -52,7 +54,7 @@ nav a:hover{
 
 /*Body*/
 body{
-    font-family: portada;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0;
     width: 100%;
     height: 500px;
@@ -64,12 +66,17 @@ body{
 
 @font-face{
     font-family: portada;
-    src: url(../fonts/Pacifico-Regular.ttf);
+    src: url(../fonts/Amsterdam/AmsterdamOne-eZ12l.ttf);
+}
+
+@font-face{
+    font-family: saps;
+    src: url(../fonts/Alta_Typeface/Alta_regular.otf);
 }
 
 .portada{
     font-size: 'open sans';
-
+    font-family: portada;
 }
 
 .portada img{
@@ -83,10 +90,11 @@ body{
 .portada p{
     font-family: portada;
     position: absolute;
-    top: 45%;
-    left: 36%;
+    top: 30%;
+    left: -2%;
     font-size: 70px;
     color: #d4b09bfe;
+    font-size: 50px;
 }
 
 
@@ -102,6 +110,8 @@ body{
     text-align: center;
     margin: 10px 0 15px 0;
     font-weight: 300;
+    font-family: portada;
+    font-size: 60px;
 }
 
 .contenedor-catalogo{
@@ -111,6 +121,7 @@ body{
     justify-content: space-around;
     flex-wrap: wrap;
     border-radius: 3px;
+    font-family: saps;
 }
 
 .contenedor-catalogo .imagen{
@@ -142,14 +153,14 @@ top: 0;
 left: 0;
 width: 100%;
 height: 100%; 
-background-color: rgb(0, 0, 0);
-opacity: 0.4;
+background-color: #eeccc6;
+opacity: 0.6;
 }
 
 .overlay h2{
     color: white;
     font-weight: 300;
-    font-size: 30px;
+    font-size: 40px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -158,89 +169,118 @@ opacity: 0.4;
 }
 
 .overlay:hover:before {
-    opacity: 0.7;
+    opacity: 0.8;
+}
+
+/*Galeria*/
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 10px;
+    padding: 20px;
+}
+
+.image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: transform 0.3s;
+}
+
+.image:hover img {
+    transform: scale(1.05);
+}
+
+h1{
+    text-align: center;
+    margin: 10px 0 15px 0;
+    font-weight: 300;
+    font-family: saps;
+}
+h5{
+    text-align: center;
+    margin: 10px 0 15px 0;
+    font-weight: 300;
 }
 
 
+/*sobre nosotros*/
 
-/*Sobre nosotros*/
+.sn1{
+    width: 100%;
+    height: auto;
+    font-family: sans-serif;
+    padding: 10px;
+}
+
+.sn2{
+    width: 100%;
+    height: auto;
+    font-family: sans-serif;
+    padding: 10px;
+}
+
+.como_trabajamos,
+.como_contactarnos,
 .quienes_somos{
-    background-color: rgb(255, 188, 211);
+    background-color: #ffff;
+}
+
+.que_podemos_hacer,
+.como_nacio{
+    background-color: #ffdbc5;
+}
+
+.sn1 h1{
+    font-family: saps;
+}
+
+.sn2 h1{
+    font-family: saps;
+}
+
+.sn1 h1, p{
+    text-align: center;
+    padding: 30px;
+    top: 50%;
+    left: 50%;
     width: 100%;
 }
 
-.quienes_somos h1{
+.sn2 h1, p{
     text-align: center;
     padding: 30px;
+    top: 50%;
+    left: 50%;
+    width: 100%;
 }
 
 
-.quienes_somos p{
-    text-align: center;
-    padding: 30px;
 
+/*Form*/
+table,tr,th{
+    padding: 10px;
+}
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.como_nacio{
-    background-color: white;
-
+.contact-form {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
-.como_nacio h1{
-    text-align: center;
-    padding: 30px;
-}
-
-
-.como_nacio p{
-    text-align: center;
-    padding: 30px;
-}
-
-.como_contactarnos{
-    background-color: rgb(255, 188, 211);
-}
-
-.como_contactarnos h1{
-    text-align: center;
-    padding: 30px;
-}
-
-
-.como_contactarnos p{
-    text-align: center;
-    padding: 30px;
-}
-
-.que_podemos_hacer{
-    background-color: white;
-}
-
-.que_podemos_hacer h1{
-    text-align: center;
-    padding: 30px;
-}
-
-.que_podemos_hacer p{
-    text-align: center;
-    padding: 30px;
-}
-
-.como_trabajamos{
-    background-color: rgb(255, 188, 211);
-}
-
-.como_trabajamos h1{
-    text-align: center;
-    padding: 30px;
-}
-
-.como_trabajamos p, li{
-    text-align: center;
-    padding: 30px;
-
-}
-
 
 /*Footer*/
 footer{
@@ -250,6 +290,7 @@ footer{
     padding-top: 20px;
     width: 100%;
     background-color:#d4b09bfe;
+    font-family: saps;
 }
 
 .pie-pagina .grupo-1{
@@ -283,6 +324,7 @@ footer{
 .pie-pagina .grupo-1 .box p{
     color: white;
     margin-bottom: 10px;
+    text-align: justify;
 }
 
 .pie-pagina .grupo-1 .red-social a{
